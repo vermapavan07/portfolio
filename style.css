@@ -3,9 +3,11 @@ html,
 body {
   background-color: #35314b;
   margin: 10px;
+  margin-top: 2px;
   color: white;
   font-family: " verdana, Times New Roman", Times, serif, sans-serif, Tahoma,
     sans-serif;
+  overflow: hidden;
 }
 main {
   display: flex;
