@@ -1,0 +1,157 @@
+/*All page basic style  */
+html,
+body {
+  background-color: #35314b;
+  margin: 10px;
+  color: white;
+  font-family: " verdana, Times New Roman", Times, serif, sans-serif, Tahoma,
+    sans-serif;
+}
+main {
+  display: flex;
+}
+h1,
+h2 {
+  font-size: 32px;
+  text-align: left;
+}
+aside {
+  flex: 1;
+  text-align: center;
+  border-right: 5px solid yellowgreen;
+}
+section {
+  flex: 4;
+  text-align: center;
+  margin-left: 16px;
+  margin-top: 30px;
+}
+/* Index page style */
+.photo {
+  border: 1px solid wheat;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+p {
+  text-align: justify;
+}
+strong {
+  color: yellowgreen;
+}
+/* Mainly aside link ya button style */
+a {
+  font-size: 25px;
+  margin-top: 12px;
+  padding: 10px;
+  color: white;
+  width: 80%;
+  text-decoration: none;
+  border: 1px ridge white;
+  border-radius: 50px;
+  display: block;
+}
+/* index page main contant link style */
+.cont {
+  font-size: 25px;
+  padding: 15px;
+  margin-left: 50px;
+  background-color: #35314b;
+  color: yellow;
+  width: 4cm;
+  border-radius: 30px;
+  display: inline;
+}
+a:hover {
+  background-color: rgb(102, 35, 35);
+}
+.cont:hover {
+  background-color: rgb(102, 35, 35);
+}
+/* a:visited {
+  color: blueviolet;
+} */
+/* All page footer style */
+footer {
+  text-align: right;
+  color: black;
+}
+/* Service page logo style */
+.logo {
+  width: 18px;
+  height: 18px;
+  border-radius: 40%;
+}
+/* all page h3 contant styles */
+h3 {
+  font-size: 20px;
+}
+/* Service page main style */
+.itemt {
+  width: 100%;
+  height: 75%;
+  text-align: center;
+}
+/* all td style */
+td {
+  padding-left: 15px;
+  padding-right: 10px;
+  /* background-color: aqua; */
+}
+/* skill page style */
+.skill {
+  text-align: left;
+  width: 100%;
+  height: 70%;
+  padding-left: 20px;
+}
+.formate {
+  height: 0.45cm;
+  width: 80%;
+  text-align: center;
+  background-color: rebeccapurple;
+  background: linear-gradient(
+    to right,
+    rgb(18, 231, 203) 30%,
+    rgb(65, 121, 82) 60%
+  );
+  border: 1px solid white;
+}
+/* contact page style */
+.contact {
+  /* border: 2px solid red; */
+  text-align: left;
+  width: 100%;
+  height: 70%;
+}
+
+.link {
+  /* text-align: center; */
+  display: inline;
+}
+a.logo {
+  border: none;
+  display: inline;
+}
+a.logo:hover {
+  background-color: unset;
+}
+.link > .logo {
+  padding-left: 50px;
+  /* border: 2px solid red; */
+}
+.space {
+  margin-top: 40px;
+}
+.name,
+.email {
+  width: 90%;
+  height: 95%;
+  font-size: 15px;
+}
+.subject,
+.massege {
+  width: 95%;
+  height: 95%;
+  font-size: 14px;
+}
