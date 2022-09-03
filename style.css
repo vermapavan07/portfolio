@@ -41,7 +41,7 @@ p {
 strong {
   color: yellowgreen;
 }
-/* Mainly aside link ya button style */
+/* Mainly aside link style */
 a {
   font-size: 25px;
   margin-top: 12px;
@@ -54,7 +54,7 @@ a {
   display: block;
 }
 /* index page main contant link style */
-.cont {
+#contact {
   font-size: 25px;
   padding: 15px;
   margin-left: 50px;
@@ -67,12 +67,10 @@ a {
 a:hover {
   background-color: rgb(102, 35, 35);
 }
-.cont:hover {
+#contact:hover {
   background-color: rgb(102, 35, 35);
 }
-/* a:visited {
-  color: blueviolet;
-} */
+
 /* All page footer style */
 footer {
   text-align: right;
