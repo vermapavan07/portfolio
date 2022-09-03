@@ -35,15 +35,15 @@
         </p>
       </div>
       <div class="contact">
-        <form method="post" action="index.html">
+        <form method="get" action="./index.html">
           <label for="name">Full Name <sup>*</sup></label>
-          <input type="text" class="name" placeholder="Enter Your name" />
+          <input type="text" id="name" placeholder="Enter Your name" />
           <br>
           <label for="email">Email Id <sup>*</sup> &nbsp;&nbsp;</label>
-          <input type="text" class="email" placeholder="Enter Your Email Address" />
+          <input type="text" id="email" placeholder="Enter The Email Address" />
           <br>
-          <label type="message">Your Message<sup>*</sup></label>
-          <textarea name="text" class="massege" rows="3" wrap="soft" placeholder="Enter your full query"></textarea>
+          <label for="message">Your Message<sup>*</sup></label>
+          <textarea name="text" class="message" id="message" rows="3" wrap="soft" placeholder="Enter your full query"></textarea>
           <br>
           <input type="submit" id="send" value="Send Query">
         </form>
@@ -55,12 +55,12 @@
           <br />
           Bikaner, Rajasthan Indiass
         </div>
-        <a href="tel:+91 7891445046" class="logo" target="_blank">
+        <a href="tel:+917891445046" class="logo" target="_blank">
           <img src="images/mobile.jpg" alt="make a phome call" class="logo" /></a>
         <br />&nbsp;&nbsp;&nbsp;&plus; 91 789 144 5046
         <div class="side">
-          <a href="mailto:vermapavan07@gmail.com?cc=prajapatpavan1999@gmail.com&subject=inquery%2Oabout%2Oyour%2Owork&body=Hello%2Opavan%2Oprajapat%"
-            class="logo" divaget="_blank">
+          <a href="mailto:vermapavan07@gmail.com"
+            class="logo" target="_blank">
             <img src="images/email.png" alt="Go to email" class="logo" /></a>
           <br />
           vermapavan07@gmail.com
@@ -80,11 +80,6 @@
     </section>
   </main>
   <footer>&copy; by pavan prajapat</footer>
-  <script>
-    let form = document.getElementsByTagName('form')[0]
-    form.onsubmit = form.reset()
-    console.log(form)
-  </script>
 </body>
 
 </html>
