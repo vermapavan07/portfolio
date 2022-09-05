@@ -35,29 +35,32 @@
         </p>
       </div>
       <div class="contact">
-        <form method="get" action="./index.html">
+        <form method="" id="form">
           <label for="name">Full Name <sup>*</sup></label>
-          <input type="text" id="name" placeholder="Enter Your name" />
+          <input type="text" id="name" placeholder="Your name"/>
           <br>
-          <label for="email">Email Id <sup>*</sup> &nbsp;&nbsp;</label>
-          <input type="text" id="email" placeholder="Enter The Email Address" />
+          <label for="email">Email Id <sup>*</sup></label>
+          <input type="text" id="email" placeholder="Email Address" />
+          <br>
+          <label for="city">City <sup>*</sup> </label>
+          <input type="text" id="city" placeholder="Your City" />
           <br>
           <label for="message">Your Message<sup>*</sup></label>
           <textarea name="text" class="message" id="message" rows="3" wrap="soft" placeholder="Enter your full query"></textarea>
           <br>
-          <input type="submit" id="send" value="Send Query">
+          <input type="submit" id="send" onclick="Submit()" value="Send Query">
         </form>
       </div>
       <div class="box">
         <div class="side">
-          <a href="https://www.google.com/maps/@28.0924924,74.0155255,16z" class="logo" target="_blank">
+          <a href="https://www.google.com/maps/@28.1007833,74.0012561,16z" class="logo" target="_blank">
             <img src="images/loc.jpg" alt="Location logo" class="logo" /></a>
           <br />
-          Bikaner, Rajasthan Indiass
+          Bikaner, Rajasthan India
         </div>
         <a href="tel:+917891445046" class="logo" target="_blank">
-          <img src="images/mobile.jpg" alt="make a phome call" class="logo" /></a>
-        <br />&nbsp;&nbsp;&nbsp;&plus; 91 789 144 5046
+          <img src="images/mobile.jpg" alt="Make a phone call" class="logo" /></a>
+        <br />&plus; 91 789 144 5046
         <div class="side">
           <a href="mailto:vermapavan07@gmail.com"
             class="logo" target="_blank">
@@ -80,6 +83,33 @@
     </section>
   </main>
   <footer>&copy; by pavan prajapat</footer>
+  <script>
+    //Clear form once submitted
+    function clearForm(){
+        document.getElementById("").reset();
+    }
+
+    function Submit() {
+      var formData = $("form").serializeArray();
+      let csv = "data:text/csv;charset=utf-8,"; // accept data as CSV
+
+      formData.forEach(function(item) {
+        csv += item.value + ","; // concat form value on csv var and add ; to create columns (you can change to , if want)
+      });
+
+      var encodedUri = encodeURI(csv);
+
+      // if you want to download
+      var downloadLink = document.createElement("a");
+      downloadLink.setAttribute("download", "FILENAME.csv");
+      downloadLink.setAttribute("href", encodedUri);
+      document.body.appendChild(downloadLink); // Required for FF
+      downloadLink.click();
+      downloadLink.remove();
+
+      clearForm();
+    }
+  </script>
 </body>
 
 </html>

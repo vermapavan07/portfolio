@@ -1,12 +1,11 @@
-/*All page basic style  */
-html,
-body {
+html, body {
   background-color: #35314b;
   margin: 10px;
   margin-top: 2px;
   color: white;
   font-family: " verdana, Times New Roman", Times, serif, sans-serif, Tahoma,
     sans-serif;
+  max-width: 1300px;
 }
 
 main {
@@ -90,10 +89,16 @@ footer {
 label{
   font-size: 20px;
   padding-right: 10px;
+  display: inline-flex;  
+  width: 100px;
+}
+label[for="message"]{
+  width: 125px;
 }
 
 #name,
-#email{
+#email,
+#city{
   width: 70%;
   font-size: 18px;
   margin: 20px 10px 0px 30px;
@@ -103,7 +108,7 @@ label{
   margin-top: 20px;
   width: 70%;
   font-size: 18px;
-  margin-left: 7px;
+  margin-left: 5px;
 }
 
 #send {
@@ -121,6 +126,6 @@ label{
   margin: 30px 10px 30px 10px;
 }
 .social{
-  width: 50%;
-  text-align: right;
+  width: 80%;
+  text-align: center;
 }

@@ -1,1 +1,1 @@
-const fn = document.getElementById()
+const fn = document.getElementById();

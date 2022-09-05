@@ -7,7 +7,7 @@ body {
   color: white;
   font-family: " verdana, Times New Roman", Times, serif, sans-serif, Tahoma,
     sans-serif;
-  /* overflow: hidden; */
+  max-width: 1600px;
 }
 main {
   display: flex;
