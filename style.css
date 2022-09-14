@@ -12,16 +12,19 @@ body {
 main {
   display: flex;
 }
+
 h1,
 h2 {
   font-size: 32px;
   text-align: left;
 }
+
 aside {
   flex: 1;
   text-align: center;
   border-right: 5px solid yellowgreen;
 }
+
 section {
   flex: 4;
   text-align: center;
@@ -35,12 +38,15 @@ section {
   width: 200px;
   height: 200px;
 }
+
 p {
   text-align: justify;
 }
+
 strong {
   color: yellowgreen;
 }
+
 /* Mainly aside link style */
 a {
   font-size: 25px;
@@ -53,6 +59,10 @@ a {
   border-radius: 50px;
   display: block;
 }
+nav a {
+  margin: 30px 0;
+}
+
 /* index page main contant link style */
 #contact {
   font-size: 25px;
@@ -109,11 +119,10 @@ td {
   height: 0.45cm;
   width: 80%;
   text-align: center;
-  background-color: rebeccapurple;
   background: linear-gradient(
     to right,
-    rgb(18, 231, 203) 30%,
-    rgb(65, 121, 82) 60%
+    rgb(65, 121, 82) 60%,
+    rgb(52, 83, 66) 70%    
   );
   border: 1px solid white;
 }
